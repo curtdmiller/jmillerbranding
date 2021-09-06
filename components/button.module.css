@@ -1,0 +1,17 @@
+.root {
+  min-width: 180px;
+  min-height: 50px;
+  border: 1px solid var(--color--jmb-red);
+  border-radius: 10px;
+  background-color: var(--color--background-body);
+  font-family: var(--font-family--body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color--text-main);
+  box-shadow: 7px 7px 0 0 var(--color--bg-tan);
+}
+
+.huge {
+  min-width: 685px;
+  min-height: 200px;
+}

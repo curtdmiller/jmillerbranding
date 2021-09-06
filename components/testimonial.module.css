@@ -1,0 +1,21 @@
+.root {
+  margin-top: 80px;
+}
+
+.testimonial {
+  margin: 0;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: var(--font-family--heading);
+  font-size: 23px;
+  font-weight: 400;
+}
+.testimonial figcaption {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+}

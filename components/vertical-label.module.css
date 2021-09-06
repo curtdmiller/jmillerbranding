@@ -1,0 +1,12 @@
+.container {
+  width: 23px;
+}
+
+.text {
+  font-family: var(--font-family--body);
+  fill: var(--color--jmb-blue);
+  font-weight: 600;
+  font-size: 14px;
+  transform-origin: center;
+  transform: rotate(-90deg) translate(-28px, 1px);
+}

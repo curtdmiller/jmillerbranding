@@ -1,0 +1,41 @@
+.root {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.embla__dotMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.embla__dot {
+  border: 1px solid var(--color--jmb-red);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  width: 12px;
+  height: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 10px;
+}
+
+.embla__dotSelected {
+  background-color: var(--color--jmb-red);
+}
