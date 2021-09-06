@@ -17,12 +17,6 @@
   margin-bottom: 0;
 }
 
-.verticalLabel {
-  position: absolute;
-  left: calc(50% - 11.5px);
-  top: -132px;
-}
-
 .bottom {
   background-color: var(--color--bg-tan);
   border-radius: 0 0 30px 30px;

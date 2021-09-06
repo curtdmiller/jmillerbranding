@@ -1,16 +1,12 @@
 import clsx from "clsx";
-import VerticalLabel from "../../components/vertical-label";
+import AboutLabel from "../../components/about-label";
 import styles from "./about.module.css";
 
 export default function About() {
   return (
     <div className={clsx(styles.root, "full-width")}>
       <section className={styles.top}>
-        <VerticalLabel
-          length={244}
-          className={styles.verticalLabel}
-          wordGapLength={80}
-        />
+        <AboutLabel />
         <h2>Your Brand Comes First</h2>
         <p>
           I look at your bigger story and who your customers are before I create
