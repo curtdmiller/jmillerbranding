@@ -7,9 +7,7 @@ export default function CallToAction() {
     <div className={clsx(styles.root, "full-width")}>
       <Link href="/contact">
         <a>
-          <p>
-            Let's start a <span className="nowrap">conversation ➛</span>
-          </p>
+          Let's start a <span className="nowrap">conversation ➛</span>
         </a>
       </Link>
     </div>

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
 import Intro from "../page-sections/home/intro";
 import Partner from "../page-sections/home/partner";
 import About from "../page-sections/home/about";
@@ -10,18 +9,16 @@ import CallToAction from "../page-sections/home/call-to-action";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <article>
       <Intro />
       <hr />
-      <article className={styles.content}>
-        <Partner />
-        <About />
-        <Testimonials />
-        <Clients />
-        <Services />
-        <CallToAction />
-      </article>
-    </>
+      <Partner />
+      <About />
+      <Testimonials />
+      <Clients />
+      <Services />
+      <CallToAction />
+    </article>
   );
 };
 

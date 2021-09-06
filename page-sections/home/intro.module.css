@@ -43,3 +43,18 @@
   margin-top: 0;
   margin-bottom: 43px;
 }
+
+.contactLink {
+  display: block;
+  text-align: center;
+  width: 180px;
+  padding: 16px;
+  border: 1px solid var(--color--jmb-red);
+  border-radius: 10px;
+  background-color: var(--color--background-body);
+  font-family: var(--font-family--body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color--text-main);
+  box-shadow: 7px 7px 0 0 var(--color--bg-tan);
+}
