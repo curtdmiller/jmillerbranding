@@ -74,7 +74,9 @@
   }
   .menu {
     width: 212px;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: var(--content-padding--large);
     border-bottom-left-radius: 30px;
   }
   .logo,
@@ -82,7 +84,7 @@
     margin-top: 0;
   }
   .contact {
-    margin-left: 30px;
-    font-size: 1em;
+    text-align: right;
+    /* margin-left: 30px; */
   }
 }

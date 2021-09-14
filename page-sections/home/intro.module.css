@@ -4,7 +4,7 @@
 
 .introContent {
   margin-top: -10px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .headshotContainer {
@@ -36,6 +36,12 @@
   margin-bottom: 21px;
 }
 
+@media screen and (max-width: 450px) {
+  .summaryTop {
+    display: block;
+  }
+}
+
 .hook {
   font-family: var(--font-family--heading);
   font-size: 23px;
@@ -57,4 +63,37 @@
   font-weight: 700;
   color: var(--color--text-main);
   box-shadow: 7px 7px 0 0 var(--color--bg-tan);
+}
+
+@media screen and (min-width: 550px) {
+  .root {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  .headshotContainer {
+    flex: 1;
+    justify-content: center;
+  }
+  .introContent {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .headshotContainer > div {
+    width: 262px;
+    height: 262px;
+  }
+  .introContent {
+    max-width: 600px;
+  }
+  .summary {
+    font-size: 1.125em;
+  }
+  .headline,
+  .hook {
+    font-size: 2.1em;
+  }
 }

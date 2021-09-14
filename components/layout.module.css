@@ -8,6 +8,9 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    padding: var(--content-padding--large);
+    padding-left: var(--content-padding--large);
+    padding-right: var(--content-padding--large);
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

@@ -13,8 +13,7 @@ export default function Intro() {
         <section className={styles.introContent}>
           <h1 className={styles.headline}>Hi, I'm Jeremy</h1>
           <p className={styles.summary}>
-            Brand Strategist,
-            <br />
+            <span className={styles.summaryTop}>Brand Strategist, </span>
             Creative Director, Writer
           </p>
           <p className={styles.hook}>
