@@ -2,6 +2,7 @@
   --color--jmb-red: #f55915;
   --color--jmb-blue: #2d4cb9;
   --color--text-main: #112f5b;
+  --color--text-light: #fffdfa;
   --color--background-body: #fffdfa;
   --color--bg-red: #ffe0db;
   --color--bg-tan: #fcf3e7;
@@ -15,6 +16,7 @@
   --breakpoint--x-large: 1200px;
 
   --content-padding: 24px;
+  --content-padding--large: 108px;
 }
 
 * {

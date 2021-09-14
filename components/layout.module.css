@@ -5,3 +5,9 @@
   padding: var(--content-padding);
   padding-bottom: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: var(--content-padding--large);
+  }
+}

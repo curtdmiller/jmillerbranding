@@ -1,14 +1,17 @@
 .root {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 52px;
   margin-left: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  height: 26px;
+  margin-top: 20px;
 }
 .logo svg {
   width: 17px;
@@ -27,8 +30,59 @@
 }
 
 .menu {
+  position: absolute;
+  display: flex;
   height: 100%;
-  width: 72px;
+  width: 160px;
+  right: -88px;
   background-color: var(--color--jmb-blue);
   border-bottom-left-radius: 15px;
+  z-index: 100;
+  overflow: hidden;
+  transition: right 200ms;
+}
+.menu.open {
+  right: 0;
+}
+
+.contact {
+  margin-left: 35px;
+  font-size: 0.8125em;
+  color: var(--color--text-light);
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .menu {
+    right: 0;
+    width: 140px;
+  }
+  .menu button {
+    display: none;
+  }
+  .contact {
+    margin-left: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .root {
+    height: 100px;
+    align-items: center;
+    margin-left: var(--content-padding--large);
+  }
+  .menu {
+    width: 212px;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+  }
+  .logo,
+  .contact {
+    margin-top: 0;
+  }
+  .contact {
+    margin-left: 30px;
+    font-size: 1em;
+  }
 }

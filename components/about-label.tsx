@@ -10,7 +10,7 @@ export default function AboutLabel() {
           x2="11.5"
           y2="244"
           stroke="#2d4cb9"
-          stroke-dasharray="70.5, 80, 70.5"
+          strokeDasharray="70.5, 80, 70.5"
         ></line>
         <g className={styles.textContainer}>
           <text x="0" y="0" dominantBaseline="middle" className={styles.text}>
