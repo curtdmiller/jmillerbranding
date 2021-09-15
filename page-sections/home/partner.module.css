@@ -1,4 +1,5 @@
 .root {
-  margin-top: 51px;
+  margin: 51px auto 0;
   padding-bottom: 2em;
+  max-width: 36em;
 }

@@ -101,3 +101,13 @@ dd {
 .nowrap {
   white-space: nowrap;
 }
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  p {
+    font-size: 1.125em;
+  }
+}
