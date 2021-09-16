@@ -28,6 +28,8 @@ const data: TestimonialProps[] = [
 export default function Testimonials() {
   const [emblaRef, embla] = useEmblaCarousel();
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
   const scrollTo = useCallback(
     (index) => embla && embla.scrollTo(index),
     [embla]
@@ -36,7 +38,12 @@ export default function Testimonials() {
   const onSelect = useCallback(() => {
     if (!embla) return;
     setSelectedIndex(embla.selectedScrollSnap());
+    setPrevBtnEnabled(embla.canScrollPrev());
+    setNextBtnEnabled(embla.canScrollNext());
   }, [embla, setSelectedIndex]);
+
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 
   useEffect(() => {
     if (!embla) return;
@@ -56,6 +63,8 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+      <PrevButton enabled={prevBtnEnabled} onClick={scrollPrev} />
+      <NextButton enabled={nextBtnEnabled} onClick={scrollNext} />
       <div className={styles.embla__dotMenu}>
         {data.map((_, i) => (
           <button
@@ -69,5 +78,38 @@ export default function Testimonials() {
         ))}
       </div>
     </section>
+  );
+}
+
+interface SlideButtonProps {
+  enabled: boolean;
+  onClick: () => void;
+}
+
+function PrevButton({ enabled, onClick }: SlideButtonProps) {
+  return (
+    <button
+      className={clsx(styles.embla__button, styles.embla__buttonPrev)}
+      onClick={onClick}
+      disabled={!enabled}
+    >
+      <svg width="18" height="36" viewBox="0 0 18 36" fill="none">
+        <path d="M17 35L1 18L17 0.999999" stroke="#F55915" />
+      </svg>
+    </button>
+  );
+}
+
+function NextButton({ enabled, onClick }: SlideButtonProps) {
+  return (
+    <button
+      className={clsx(styles.embla__button, styles.embla__buttonNext)}
+      onClick={onClick}
+      disabled={!enabled}
+    >
+      <svg width="18" height="36" viewBox="0 0 18 36" fill="none">
+        <path d="M1 0.999999L17 18L1 35" stroke="#F55915" />
+      </svg>
+    </button>
   );
 }

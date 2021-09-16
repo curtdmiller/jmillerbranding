@@ -3,6 +3,9 @@
 }
 
 .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   text-align: center;
 }
@@ -13,6 +16,7 @@
   font-family: var(--font-family--heading);
   font-size: 23px;
   font-weight: 400;
+  max-width: 22em;
 }
 .testimonial figcaption {
   margin-top: 20px;
