@@ -11,7 +11,7 @@ export default function Services() {
           and moving it forward with great creative work.
         </p>
       </div>
-      <dl>
+      <dl className={styles.bottom}>
         <dt>Branding and Brand Architecture</dt>
         <dd>
           Discover how to connect with your customer and build a brand that

@@ -124,7 +124,9 @@ main {
     font-size: 36px;
     line-height: 42px;
   }
-  p {
+  p,
+  dd,
+  dt {
     font-size: 1.125em;
   }
   .full-width {

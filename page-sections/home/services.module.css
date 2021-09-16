@@ -1,3 +1,41 @@
 .root {
-  margin: 80px 0;
+  padding: 80px 0;
+}
+
+@media screen and (min-width: 1060px) {
+  .root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: var(--color--jmb-red);
+    z-index: 100;
+  }
+  .root::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    border-right: 1px solid var(--color--jmb-blue);
+  }
+  .top,
+  .bottom {
+    flex-basis: 50%;
+  }
+  .top {
+    padding-right: 90px;
+  }
+  .bottom {
+    padding-left: 90px;
+  }
 }
