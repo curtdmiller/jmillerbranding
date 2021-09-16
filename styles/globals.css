@@ -102,12 +102,33 @@ dd {
   white-space: nowrap;
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--content-padding);
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
+  main {
+    padding-left: var(--content-padding--large);
+    padding-right: var(--content-padding--large);
+  }
+  main article > *:not(.full-width) {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   h2 {
     font-size: 36px;
     line-height: 42px;
   }
   p {
     font-size: 1.125em;
+  }
+  .full-width {
+    margin-left: calc(-1 * var(--content-padding--large));
+    margin-right: calc(-1 * var(--content-padding--large));
   }
 }

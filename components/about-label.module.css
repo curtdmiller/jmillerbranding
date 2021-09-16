@@ -3,10 +3,18 @@
   left: calc(50% - 11.5px);
   top: -132px;
   width: 23px;
+  z-index: 100;
+}
+.large {
+  display: none;
 }
 
-.textContainer {
+.small .textContainer {
   transform: translate(13px, 160px);
+}
+
+.large .textContainer {
+  transform: translate(13px, 455px);
 }
 
 .text {
@@ -15,4 +23,16 @@
   font-weight: 600;
   font-size: 14px;
   transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 1060px) {
+  .container {
+    top: -11.5px;
+  }
+  .small {
+    display: none;
+  }
+  .large {
+    display: block;
+  }
 }
