@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function CallToAction() {
   return (
     <div className={clsx(styles.root, "full-width")}>
-      <Link href="/contact">
+      <Link href="mailto:jeremy@jmillerbranding.com">
         <a>
-          Let's start a <span className="nowrap">conversation ➛</span>
+          Let&apos;s start a <span className="nowrap">conversation ➛</span>
         </a>
       </Link>
     </div>

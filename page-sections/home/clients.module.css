@@ -26,10 +26,30 @@
 
 .clients ul li {
   list-style: none;
+  position: relative;
 }
 
 .clients ul li:not(:last-of-type) {
   margin-bottom: 1em;
+}
+
+.clientButton {
+  background: none;
+  border: none;
+  font-family: var(--font-family--body);
+  font-size: 24px;
+  color: var(--color--text-main);
+  cursor: pointer;
+  text-align: left;
+}
+
+.clientButton span {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+}
+
+.clientButton.active span {
+  border-bottom: 1px solid var(--color--jmb-red);
 }
 
 .imageContainer {
