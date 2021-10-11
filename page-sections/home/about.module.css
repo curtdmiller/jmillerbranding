@@ -43,6 +43,10 @@
   margin-top: 0;
 }
 
+.svgContainer {
+  display: none;
+}
+
 @media screen and (min-width: 1060px) {
   .root {
     position: relative;
@@ -91,5 +95,8 @@
   .bottom p,
   .bottom h2 {
     width: 360px;
+  }
+  .svgContainer {
+    display: block;
   }
 }

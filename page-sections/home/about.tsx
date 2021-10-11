@@ -20,7 +20,12 @@ export default function About() {
         </div>
       </section>
       <section className={styles.bottom}>
-        <div></div>
+        <div className={styles.svgContainer}>
+          <svg width="530" height="713" viewBox="0 0 530 713">
+            <circle cx="50%" cy="195" r="125" fill="#2D4CB9" />
+            <circle cx="50%" cy="515" r="125" fill="#FFD9D3" />
+          </svg>
+        </div>
         <div>
           <h2>Diverse experience, creative value</h2>
           <p>
