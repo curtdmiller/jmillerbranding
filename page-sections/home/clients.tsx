@@ -63,6 +63,7 @@ export default function Clients() {
                     currentClient.name == client.name && styles.active
                   )}
                   onClick={() => setCurrentClient(client)}
+                  onMouseEnter={() => setCurrentClient(client)}
                 >
                   <span>{client.name}</span>
                 </button>
